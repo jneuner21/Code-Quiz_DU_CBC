@@ -12,17 +12,132 @@
 <body>
     <header class="headerContainer">
          <h1 class="title">Code Quiz<span class="titleName">- Jack Neuner </span></h1>
-        <h>TIMER: <span class="time">120</span></h1>
+        <h1>TIMER: <span class="time">90</span></h1>
     </header>
 <main class="mainContainer">
     <div>
         <p class="highscoreDisplay">HIGHSCORE:</p>
     </div>
-    <div quizContainer>
+    <div class= "quizContainer">
         <button id="startButton" class="btn">START</button>
     </div>
+    <article class="quizSet1 hide">
+        <ol>
+            <h2>Which of the following is correct about features of JavaScript?</h2>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                JavaSript is complementary to and integrated with HTML
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                JavaScript is open and cross-platform
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "correctAnswer"
+                    class="btn"
+                >
+                A & B
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                None of the above
+                </button>
+            </li>
+        </ol>
+    </article>
+    <article class="quizSet2 hide">
+        <ol>
+            <h2>Which built-in method sorts the elements of an array?</h2>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                Change Order (order)
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "correctAnswer2"
+                    class="btn"
+                >
+                Sort()
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                Order()
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                None of the above
+                </button>
+            </li>
+        </ol>
+    </article>
+    <article class="quizSet3 hide">
+        <ol>
+            <h2>How can you get the total number of arguments passed to a function?</h2>
+            <li>
+                <button
+                    id= "correctAnswer3"
+                    class="btn"
+                >
+                Using arguments.length property
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                using arg.length property
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                A & B
+                </button>
+            </li>
+            <li>
+                <button
+                    id= "choiceBtn"
+                    class="btn"
+                >
+                None of the above
+                </button>
+            </li>
+        </ol>
+    </article>
+    <section class="gameOverScreen hide">
+        <h1>GAME OVER</h1>
+    </section>
+
 </main>
 
-<link rel="script" src="./Assets.script.js">
+<script src="./Assets/script.js"></script>
 </body>
 </html>

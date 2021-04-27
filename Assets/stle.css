@@ -8,6 +8,10 @@ body {
   font-size: 62.5;
 }
 
+.hide {
+  display: none;
+}
+
 .headerContainer {
   display: flex;
   font-size: 2rem;
@@ -45,15 +49,16 @@ main {
   text-align: center;
   font-size: 22px;
   line-height: 22px;
-  margin: 50% 20px 20px 24px;
+  margin: 10px 10px 10px 10px;
   padding: 30px 34px;
   cursor: pointer;
 }
 
 #startButton {
-  font-size: 50px;
-  margin-top: 200%;
-  margin-left: 250%;
+  font-size: 100px;
+  margin-top: 100%;
+  margin-left: 130%;
+  padding: 50px;
 }
 
 .highscoreDisplay {
@@ -61,4 +66,31 @@ main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: #280067;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.quizSet1 {
+  margin-top: 5%;
+  margin-left: 32%;
+}
+
+.quizSet2 {
+  margin-top: 5%;
+  margin-left: 32%;
+}
+
+.quizSet3 {
+  margin-top: 5%;
+  margin-left: 32%;
+}
+
+.gameOverScreen {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50%;
 }
