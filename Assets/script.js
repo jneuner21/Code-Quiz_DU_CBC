@@ -45,27 +45,40 @@ function nextQuestion3() {
   gameOverSection.classList.remove("hide");
 }
 
+function gameOver(){
+  if(time <= 0){
+    quizSet1.classList.add("hide");
+    quizSet2.classList.add("hide");
+    quizSet3.classList.add("hide");
+    gameOverSection.classList.remove("hide");
+  }
+}
+
 function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
     time.textContent = secondsLeft;
-
+    
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
-      sendMessage();
     }
-
+    
   }, 1000);
 }
 
-
-if(choiceBtn){
-  (secondsLeft - 10)
-  console.log("incorrect");
+function fn1() {
+  var str= document.getElementById("nameSubmission").value;
 }
-  else{
-    console.log("correct");
-  }
+
+
+//if(choiceBtn){
+ // (secondsLeft - 10)
+  //console.log("incorrect");
+//}
+  //else{
+ //   console.log("correct");
+ // }
+
 
 
 //gameOverSection.addEventListener("click", gameOverSection)

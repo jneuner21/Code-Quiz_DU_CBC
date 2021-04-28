@@ -75,18 +75,21 @@ h2 {
 }
 
 .quizSet1 {
+  text-align: center;
   margin-top: 5%;
-  margin-left: 32%;
+  margin-left: 15%;
 }
 
 .quizSet2 {
+  text-align: center;
   margin-top: 5%;
-  margin-left: 32%;
+  margin-left: 15%;
 }
 
 .quizSet3 {
+  text-align: center;
   margin-top: 5%;
-  margin-left: 32%;
+  margin-left: 15%;
 }
 
 .gameOverScreen {

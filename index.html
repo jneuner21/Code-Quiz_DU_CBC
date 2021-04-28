@@ -16,7 +16,7 @@
     </header>
 <main class="mainContainer">
     <div>
-        <p class="highscoreDisplay">HIGHSCORE:</p>
+        <p class="highscoreDisplay">HIGHSCORE:<span class="displayedTopScore"></span></p>
     </div>
     <div class= "quizContainer">
         <button id="startButton" class="btn">START</button>
@@ -137,13 +137,14 @@
         <form>
             <label for="fname"><span class="submissionText">Enter your name:</span></label><br>
             <input type="text" class="nameSubmission"><br>
+            <button onclick="fn1()" id="submitBtn" class="btn">Save Score</button>
         </form>
         <br>
         <h2 class="topScores"> Top Scores:</h2>
             <ul>
-                <li class="listItems"> placeholder 1 </li>
-                <li class="listItems"> placeholder 2 </li>
-                <li class="listItems"> placeholder 3 </li>
+                <li class="listItems"> --- </li>
+                <li class="listItems"> --- </li>
+                <li class="listItems"> --- </li>
             </ul>
     </section>
 
