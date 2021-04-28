@@ -1,15 +1,18 @@
 var startBtn= document.querySelector("#startButton");
-var mainSection= document.querySelector(".mainContainer")
-var quizContainer= document.querySelector(".quizContainer")
-var quizSet1= document.querySelector(".quizSet1")
-var quizSet2= document.querySelector(".quizSet2")
-var quizSet3= document.querySelector(".quizSet3")
-var gameOverSection= document.querySelector(".gameOverSection")
-
+var mainSection= document.querySelector(".mainContainer");
+var quizContainer= document.querySelector(".quizContainer");
+var quizSet1= document.querySelector(".quizSet1");
+var quizSet2= document.querySelector(".quizSet2");
+var quizSet3= document.querySelector(".quizSet3");
+var gameOverSection= document.querySelector(".gameOverScreen");
+var secondsLeft= 60;
+var time= document.querySelector(".time");
+var choiceBtn= document.getElementById("choiceBtn");
 
 function startGame() {
   quizContainer.classList.add("hide");
   quizSet1.classList.remove("hide");
+  setTime()
 }
 
 startBtn.addEventListener("click", startGame);
@@ -35,14 +38,37 @@ correctAnswer2.addEventListener("click",nextQuestion2)
 var correctAnswer3= document.getElementById("correctAnswer3")
 
 
+correctAnswer3.addEventListener("click",nextQuestion3)
 
 function nextQuestion3() {
   quizSet3.classList.add("hide");
   gameOverSection.classList.remove("hide");
 }
 
-gameOverSection.addEventListener("click", gameOverSection)
+function setTime() {
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    time.textContent = secondsLeft;
 
+    if(secondsLeft === 0) {
+      clearInterval(timerInterval);
+      sendMessage();
+    }
+
+  }, 1000);
+}
+
+
+if(choiceBtn){
+  (secondsLeft - 10)
+  console.log("incorrect");
+}
+  else{
+    console.log("correct");
+  }
+
+
+//gameOverSection.addEventListener("click", gameOverSection)
 
 //below is an example of a click listen
-//document.getElementById("myBtn").addEventListener("click", function() {
+//document.getElementById("myBtn").addEventListener("click", function()
