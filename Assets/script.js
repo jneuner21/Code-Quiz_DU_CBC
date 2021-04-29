@@ -45,13 +45,12 @@ function nextQuestion3() {
   gameOverSection.classList.remove("hide");
 }
 
+
 function gameOver(){
-  if(time <= 0){
-    quizSet1.classList.add("hide");
-    quizSet2.classList.add("hide");
-    quizSet3.classList.add("hide");
-    gameOverSection.classList.remove("hide");
-  }
+  quizSet1.classList.add("hide");
+  quizSet2.classList.add("hide");
+  quizSet3.classList.add("hide");
+  gameOverSection.classList.remove("hide");
 }
 
 function setTime() {
@@ -61,10 +60,13 @@ function setTime() {
     
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
+      gameOver()
     }
     
   }, 1000);
 }
+
+
 
 function fn1() {
   var str= document.getElementById("nameSubmission").value;
